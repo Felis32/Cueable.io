@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: var(--paper);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-hover: var(--sidebar-hover);
+  --color-sidebar-active: var(--sidebar-active);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-olive: var(--accent-olive);
+  --color-blue-bg: var(--accent-blue-bg);
+  --color-blue-bg-2: var(--accent-blue-bg-2);
+  --color-tint-rose: var(--tint-rose);
+  --color-tint-sage: var(--tint-sage);
+  --color-tint-peach: var(--tint-peach);
+  --color-tint-sky: var(--tint-sky);
+  --color-night: var(--night);
+  --color-night-2: var(--night-2);
+  --color-gold: var(--accent-gold);
+  --color-gold-hover: var(--accent-gold-hover);
+  --color-clay: var(--accent-clay);
+  --color-clay-hover: var(--accent-clay-hover);
+  --color-demo-chrome: var(--demo-chrome);
+
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+
+  --radius-control: var(--radius-control);
+  --radius-card: var(--radius-card);
+  --radius-panel: var(--radius-panel);
+  --radius-nav: var(--radius-nav);
+  --radius-pill: var(--radius-pill);
+}
+
+:root {
+  --paper: #f6f4f0;
+  --sidebar: #f5f5f2;
+  --sidebar-hover: #efe8e1;
+  --sidebar-active: #ede8e1;
+  --surface: #ffffff;
+  --line: #e7e2dd;
+  --line-2: #e0e0e0;
+  --ink: #171717;
+  --ink-2: #212121;
+  --muted: #676767;
+  --muted-2: #9a9a97;
+
+  --accent-olive: #3b5423;
+  --accent-blue-bg: #e2f5ff;
+  --accent-blue-bg-2: #ddf2fd;
+  --accent-gold: #f3d36a;
+  --accent-gold-hover: #ebc64d;
+  --accent-clay: #6b4540;
+  --accent-clay-hover: #5c3b37;
+  --demo-chrome: #8d5e5e;
+
+  --tint-rose: #d8c1c2;
+  --tint-sage: #c9d9b4;
+  --tint-peach: #ecc9be;
+  --tint-sky: #c2dffd;
+
+  --night: #181818;
+  --night-2: #212023;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+
+  --gap-outer: 8px;
+  --sidebar-w: 236px;
+  --sidebar-w-min: 68px;
+  --row-h: 48px;
+  --row-h-list: 60px;
+  --icon-sm: 16px;
+  --icon-md: 24px;
+  --avatar: 26px;
+
+  --radius-control: 8px;
+  --radius-card: 14px;
+  --radius-panel: 18px;
+  --radius-nav: 12px;
+  --radius-pill: 9999px;
+
+  --border: 1px;
+
+  --font-serif: var(--font-serif-loaded), "Newsreader", "Source Serif 4", Literata, Georgia, serif;
+  --font-sans: var(--font-sans-loaded), Inter, Geist, ui-sans-serif, system-ui, sans-serif;
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+.lift-hover {
+  transition: transform 180ms ease;
+  will-change: transform;
+}
+
+.lift-hover:hover {
+  transform: translateY(-4px);
+}
+
+@keyframes cord-bob {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 7px);
+  }
+}
+
+.nav-frost {
+  pointer-events: none;
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 40;
+  height: 112px;
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--paper) 38%, transparent) 0%,
+    color-mix(in srgb, var(--paper) 12%, transparent) 50%,
+    transparent 100%
+  );
+  backdrop-filter: blur(28px) saturate(160%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 36%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 36%, transparent 100%);
+}
