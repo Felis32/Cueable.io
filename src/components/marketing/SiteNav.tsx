@@ -7,7 +7,7 @@ import { primaryNav } from "@/data/navigation";
 import { useDismissOnOutside } from "@/hooks/useDismissOnOutside";
 
 const productLinks = [
-  { href: "/#product", title: "Prompt to ad", detail: "Describe the spot. Primecut cuts it." },
+  { href: "/#product", title: "Prompt to ad", detail: "Describe the spot. Cueable cuts it." },
   { href: "/#product", title: "URL to ad", detail: "Start from a product page." },
   { href: "/#product", title: "Assets to ad", detail: "Use the stills and logo you already have." },
 ];
@@ -40,7 +40,7 @@ export function SiteNav() {
       <div ref={rootRef} className="pointer-events-auto relative mx-auto w-full max-w-[1120px] px-4 pt-4 md:px-6">
         <nav className="flex h-[52px] items-center justify-between rounded-[var(--radius-pill)] border border-white/50 bg-white/55 px-2.5 pl-4 shadow-[0_8px_30px_rgba(23,23,23,0.05)] backdrop-blur-2xl backdrop-saturate-150">
           <div className="flex items-center gap-5">
-            <Link href="/" aria-label="Primecut home" onClick={() => setOpen(null)}>
+            <Link href="/" aria-label="Cueable home" onClick={() => setOpen(null)}>
               <LogoMark />
             </Link>
             <div className="hidden items-center lg:flex">

@@ -15,8 +15,9 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Primecut — Video ads from a prompt, URL, or your assets",
-  description: "Create polished marketing videos from a prompt, a product URL, or the assets you already have.",
+  applicationName: "Cueable",
+  title: "Cueable — Video ads from a prompt, URL, or your assets",
+  description: "Create polished marketing videos from a prompt, a product URL, or the assets you already have with Cueable.",
 };
 
 export default function RootLayout({

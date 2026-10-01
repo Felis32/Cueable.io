@@ -60,7 +60,7 @@ export function MarketingNav() {
       <div className="pointer-events-auto relative mx-auto w-full max-w-[1180px] px-4 pt-4 md:px-6">
         <nav className="relative flex h-[52px] items-center justify-between rounded-[var(--radius-pill)] border border-white/45 bg-white/30 px-2.5 pl-4 shadow-[0_8px_30px_rgba(23,23,23,0.04)] backdrop-blur-[24px] backdrop-saturate-150">
           <div className="flex min-w-0 items-center gap-5">
-            <Link href="/" aria-label="ShipCut home">
+            <Link href="/" aria-label="Cueable home">
               <LogoMark />
             </Link>
             <div className="hidden items-center lg:flex">

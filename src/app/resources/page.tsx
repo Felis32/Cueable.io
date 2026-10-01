@@ -1,7 +1,7 @@
 import { PublicFrame } from "@/components/marketing/PublicFrame";
 
 const notes = [
-  { title: "Writing a brief Primecut can cut", detail: "Length, what must be seen, and what must not." },
+  { title: "Writing a brief Cueable can cut", detail: "Length, what must be seen, and what must not." },
   { title: "When to start from a URL", detail: "Use the product page if the copy there is already true." },
   { title: "Aspect ratios that match the buy", detail: "9:16 for stories, 1:1 for feeds, 16:9 for YouTube." },
   { title: "What the preview is", detail: "The app shows a structured preview until a render API is connected." },

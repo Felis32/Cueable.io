@@ -1,5 +1,6 @@
 import { PublicFrame } from "@/components/marketing/PublicFrame";
 import { TemplateBrowser } from "@/components/marketing/TemplateBrowser";
+import { AppI18nProvider } from "@/lib/app-i18n";
 
 export default function TemplatesPage() {
   return (
@@ -8,7 +9,9 @@ export default function TemplatesPage() {
       <p className="mt-4 max-w-[460px] text-[15px] leading-[1.5] text-muted">
         Starting points for a product ad. Swap the brief; keep the structure.
       </p>
-      <TemplateBrowser />
+      <AppI18nProvider>
+        <TemplateBrowser />
+      </AppI18nProvider>
     </PublicFrame>
   );
 }

@@ -3,13 +3,13 @@ import { Thumb } from "@/components/marketing/Thumb";
 import { templates } from "@/data/templates";
 
 const steps = [
-  { n: "01", title: "Give Primecut the product", body: "A sentence, a URL, or the files you already use in market." },
-  { n: "02", title: "Primecut sets the cut", body: "Scenes, pace, type, and the line you want remembered." },
+  { n: "01", title: "Give Cueable the product", body: "A sentence, a URL, or the files you already use in market." },
+  { n: "02", title: "Cueable sets the cut", body: "Scenes, pace, type, and the line you want remembered." },
   { n: "03", title: "Take the ad", body: "A finished ratio for the placement you actually buy." },
 ];
 
 const paths = [
-  { title: "URL → video", body: "Primecut reads the page and keeps the product, not the chrome around it." },
+  { title: "URL → video", body: "Cueable reads the page and keeps the product, not the chrome around it." },
   { title: "Prompt → video", body: "Say the length, the light, and what must not appear." },
   { title: "Assets → video", body: "Stills, a logo, an old clip. The cut is built from those, not a stock library." },
 ];

@@ -1,5 +1,5 @@
 import Link, { type LinkProps } from "next/link";
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
 
 type Shared = {
   children: ReactNode;
@@ -12,7 +12,8 @@ type AsButton = Shared &
   };
 
 type AsLink = Shared &
-  Omit<LinkProps, "href"> & {
+  Omit<LinkProps, "href" | "className"> &
+  Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
     href: string;
   };
 
@@ -24,14 +25,11 @@ const base =
   "inline-flex cursor-pointer items-center justify-center rounded-[var(--radius-pill)] px-5 py-[10px] text-[14px] font-medium leading-none transition-colors";
 
 export function PrimaryPillButton(props: AsButton | AsLink) {
-  const className = cx(
-    base,
-    "bg-ink text-surface hover:bg-ink-2",
-    props.className,
-  );
+  const isLink = "href" in props && typeof props.href === "string";
+  const className = cx(base, "bg-ink text-surface hover:bg-ink-2", props.className);
 
-  if (props.href) {
-    const { href, children, className: _c, ...rest } = props;
+  if (isLink) {
+    const { href, children, className: _className, ...rest } = props as AsLink;
     return (
       <Link href={href} className={className} {...rest}>
         {children}
@@ -39,7 +37,7 @@ export function PrimaryPillButton(props: AsButton | AsLink) {
     );
   }
 
-  const { children, className: _c, ...rest } = props;
+  const { children, className: _className, ...rest } = props as AsButton;
   return (
     <button type="button" className={className} {...rest}>
       {children}
@@ -48,14 +46,11 @@ export function PrimaryPillButton(props: AsButton | AsLink) {
 }
 
 export function GhostButton(props: AsButton | AsLink) {
-  const className = cx(
-    base,
-    "border border-line bg-surface text-ink hover:bg-sidebar",
-    props.className,
-  );
+  const isLink = "href" in props && typeof props.href === "string";
+  const className = cx(base, "border border-line bg-surface text-ink hover:bg-sidebar", props.className);
 
-  if (props.href) {
-    const { href, children, className: _c, ...rest } = props;
+  if (isLink) {
+    const { href, children, className: _className, ...rest } = props as AsLink;
     return (
       <Link href={href} className={className} {...rest}>
         {children}
@@ -63,7 +58,7 @@ export function GhostButton(props: AsButton | AsLink) {
     );
   }
 
-  const { children, className: _c, ...rest } = props;
+  const { children, className: _className, ...rest } = props as AsButton;
   return (
     <button type="button" className={className} {...rest}>
       {children}
@@ -72,14 +67,11 @@ export function GhostButton(props: AsButton | AsLink) {
 }
 
 export function GoldPillButton(props: AsButton | AsLink) {
-  const className = cx(
-    base,
-    "bg-gold text-ink hover:bg-gold-hover",
-    props.className,
-  );
+  const isLink = "href" in props && typeof props.href === "string";
+  const className = cx(base, "bg-gold text-ink hover:bg-gold-hover", props.className);
 
-  if (props.href) {
-    const { href, children, className: _c, ...rest } = props;
+  if (isLink) {
+    const { href, children, className: _className, ...rest } = props as AsLink;
     return (
       <Link href={href} className={className} {...rest}>
         {children}
@@ -87,7 +79,7 @@ export function GoldPillButton(props: AsButton | AsLink) {
     );
   }
 
-  const { children, className: _c, ...rest } = props;
+  const { children, className: _className, ...rest } = props as AsButton;
   return (
     <button type="button" className={className} {...rest}>
       {children}

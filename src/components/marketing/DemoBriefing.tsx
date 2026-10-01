@@ -108,7 +108,7 @@ function GuideView() {
     <div className="relative h-full overflow-hidden rounded-[18px]">
       <div className="absolute inset-0 bg-[radial-gradient(80%_80%_at_10%_40%,#ecc9be,transparent_55%),radial-gradient(70%_90%_at_95%_20%,#d8c1c2,transparent_50%),linear-gradient(180deg,#f3e4d8,#e8cfc6)]" />
       <div className="absolute inset-y-0 left-[12%] right-[12%] overflow-hidden bg-surface px-8 py-8 shadow-[0_20px_60px_rgba(23,23,23,0.1)] md:px-12">
-        <p className="text-[12px] font-medium text-olive">ShipCut · Walkthrough</p>
+        <p className="text-[12px] font-medium text-olive">Cueable · Walkthrough</p>
         <h2 className="mt-3 text-[26px] font-medium leading-[1.2] text-ink-2 md:text-[30px]">
           Cleaning a pipeline sheet before you ship the cut
         </h2>

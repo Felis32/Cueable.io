@@ -1,4 +1,4 @@
-# ShipCut — Design Architecture
+# Cueable — Design Architecture
 
 Source of structure: editorial SaaS shell (sidebar + inset panel + floating prompt). Values are design defaults. Implement with tokens first, then tune by eye.
 
@@ -197,7 +197,7 @@ White (`--surface`), radius `--radius-panel`, inset by `--gap-outer`.
 
 ### Home
 
-- H1: `Hi {name}, Welcome to ShipCut` + wave
+- H1: `Hi {name}, welcome to Cueable` + wave
 - Subtitle: `How would you like to get started?`
 - Two **ActionCards** side by side: Start recording / Upload videos. Full card is the hit target. Hover = slight fill darken, border unchanged.
 - **ChecklistPanel** “Quick Start” with `0/4 done`. Four rows: circular checkbox, label, current row shows black “Next” pill. Completed: filled olive check + muted/strikethrough label.

@@ -37,7 +37,7 @@ function DocsArt() {
     <div className="relative h-full overflow-hidden rounded-[18px] bg-[linear-gradient(140deg,#c2dffd,#c9d9b4)]">
       <div className="absolute inset-x-6 top-8 bottom-0 rounded-t-[14px] border border-line bg-surface px-6 pt-4 shadow-[0_16px_40px_rgba(23,23,23,0.08)]">
         <p className="text-[11px] text-muted">Documents · Navigating the workspace</p>
-        <p className="mt-3 text-[18px] font-medium text-ink-2">Navigating the ShipCut workspace</p>
+        <p className="mt-3 text-[18px] font-medium text-ink-2">Navigating the Cueable workspace</p>
         <p className="mt-2 text-[12px] text-muted">Role · Enablement · 12 min</p>
         <p className="mt-4 text-[13px] font-medium text-ink-2">Introduction</p>
         <p className="mt-1 text-[12px] leading-[1.5] text-muted">
@@ -135,7 +135,7 @@ export function Capabilities() {
   return (
     <section className="mx-auto w-full max-w-[1080px] px-4 pb-24 pt-16">
       <h2 className="mb-14 text-center font-serif text-[36px] leading-[1.15] text-ink-2 md:text-[48px]">
-        What ShipCut can
+        What Cueable can
         <br />
         do for you
       </h2>

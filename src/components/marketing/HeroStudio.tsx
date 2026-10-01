@@ -17,7 +17,7 @@ export function HeroStudio() {
           Turn your product into a video ad in minutes.
         </h1>
         <p className="mt-5 max-w-[440px] text-[15px] leading-[1.5] text-muted">
-          Write a prompt, paste a product URL, or drop in the assets you already have. Primecut returns a cut you can run.
+          Write a prompt, paste a product URL, or drop in the assets you already have. Cueable returns a cut you can run.
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <Link href="/signup" className="inline-flex rounded-[var(--radius-pill)] bg-ink px-5 py-[11px] text-[14px] font-medium text-surface hover:bg-ink-2">

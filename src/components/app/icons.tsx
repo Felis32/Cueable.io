@@ -42,6 +42,13 @@ export function Icon({ name, className = "h-4 w-4" }: { name: string; className?
           <path d="M3 4.5h4l1.2 1.5H13v6.2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4.5Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
         </svg>
       );
+    case "admin":
+      return (
+        <svg {...common}>
+          <path d="M8 2.5 12.5 4v3.8c0 2.7-1.8 4.6-4.5 5.7-2.7-1.1-4.5-3-4.5-5.7V4L8 2.5Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
+          <path d="m6.2 7.8 1.2 1.2 2.5-2.6" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      );
     case "gift":
       return (
         <svg {...common}>

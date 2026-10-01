@@ -17,7 +17,7 @@ export const plans: Plan[] = [
     period: "to try a cut",
     description: "One project, watermarked export, enough to see if the cut is right.",
     cta: "Start free",
-    features: ["1 active project", "720p preview", "Primecut watermark", "Prompt, URL, or assets"],
+    features: ["1 active project", "720p preview", "Cueable watermark", "Prompt, URL, or assets"],
   },
   {
     id: "pro",
